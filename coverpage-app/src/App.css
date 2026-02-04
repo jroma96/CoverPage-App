@@ -42,16 +42,19 @@
 }
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  background-color: darkcyan;
+  border-radius: 10px 0px 0px 10px;
 }
 .sidebar img {
   margin-top: 6vh;
   border-radius: 50%;
+  justify-self: center;
   align-content: center;
   object-fit: cover;
   padding: 5px;
   width: 90%;
-  height: 40%;
+  height: 65%;
 }
 
 .header {
@@ -80,31 +83,51 @@
 .main {
   display: grid;
   grid-template-rows: 1fr 3fr 3fr;
+  row-gap: 40px;
 }
 
-.educacion {
+.section {
   justify-items: center;
   color: cadetblue;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
 }
-.educacion h2 {
+
+.section p {
+  color: darkgray;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.section h2 {
   align-self: center;
   font-size: 3vw;
   text-decoration: underline;
 }
 
-.educacion h3 {
+.section h3 {
   align-self: center;
-  justify-self: left;
+  justify-self: center;
   font-size: 2vw;
 }
 
-.educacion img {
+.section h4 {
+  font-size: 2vw;
+}
+
+.section img {
   justify-self: flex-end;
   object-fit: contain;
   border-radius: 100px;
   width: 40vw;
   height: 20vh;
+}
+.skill {
+  background-color: lightgreen;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: x-large;
+  height: 40px;
 }
