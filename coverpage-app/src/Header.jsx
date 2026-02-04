@@ -1,6 +1,3 @@
-import { useState } from "react";
-import profile from "./assets/profile-pic.jpeg";
-
 function Header() {
   return (
     <div className="header">

@@ -42,7 +42,7 @@
 }
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 1.5fr 6.5fr 1fr;
   background-color: darkcyan;
   border-radius: 10px 0px 0px 10px;
 }

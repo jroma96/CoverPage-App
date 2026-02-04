@@ -50,6 +50,17 @@ function SideBar() {
           ))}
         </ul>
       </div>
+      <div>
+        <h3
+          style={{
+            textDecoration: "underline",
+            fontSize: "3vw",
+            color: "white",
+          }}
+        >
+          Redes Sociales
+        </h3>
+      </div>
     </div>
   );
 }
