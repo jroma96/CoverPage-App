@@ -1,4 +1,5 @@
 import profile from "./assets/profile-pic.jpeg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const skills = [
   "Javascript",
@@ -60,6 +61,14 @@ function SideBar() {
         >
           Redes Sociales
         </h3>
+        <ul className="network-list">
+          <li>
+            <FaGithub className="icon" href="" />
+          </li>
+          <li>
+            <FaLinkedin className="icon" />
+          </li>
+        </ul>
       </div>
     </div>
   );
@@ -67,6 +76,10 @@ function SideBar() {
 
 function Skill({ children }) {
   return <span className="skill">{children}</span>;
+}
+
+function Network({ children }) {
+  return <span className="network">{children}</span>;
 }
 
 export default SideBar;
