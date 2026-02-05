@@ -20,6 +20,18 @@ const skills = [
   "Agile",
 ];
 
+const interests = [
+  "Deportes",
+  "IOT",
+  "Tecnologia",
+  "AI",
+  "Peliculas",
+  "Entretenimiento",
+  "Musica",
+  "VideoJuegos",
+  "Naturaleza",
+];
+
 function SideBar() {
   return (
     <div className="sidebar">
@@ -63,11 +75,50 @@ function SideBar() {
         </h3>
         <ul className="network-list">
           <li>
-            <FaGithub className="icon" href="" />
+            <a
+              href="https://github.com/jroma96"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="icon" />
+            </a>
           </li>
           <li>
-            <FaLinkedin className="icon" />
+            <a
+              href="https://www.linkedin.com/in/jose-roma-918b26195/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="icon" />
+            </a>
           </li>
+        </ul>
+      </div>
+      <div>
+        <h3
+          style={{
+            textDecoration: "underline",
+            fontSize: "3vw",
+            color: "white",
+          }}
+        >
+          Intereses
+        </h3>
+        <ul
+          style={{
+            display: "flex",
+            alignItems: "flex-start",
+            flexWrap: "wrap",
+            gap: "10px",
+            marginBlockStart: "0px",
+            paddingInlineStart: "0px",
+            paddingLeft: "10px",
+            paddingRight: "10px",
+          }}
+        >
+          {interests.map((skill) => (
+            <Skill>{skill}</Skill>
+          ))}
         </ul>
       </div>
     </div>
@@ -76,10 +127,6 @@ function SideBar() {
 
 function Skill({ children }) {
   return <span className="skill">{children}</span>;
-}
-
-function Network({ children }) {
-  return <span className="network">{children}</span>;
 }
 
 export default SideBar;
